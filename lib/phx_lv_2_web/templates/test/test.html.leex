@@ -1,0 +1,4 @@
+<p>x = <%= @x %>.</p>
+<button phx-click="update">update</button>
+<div id="legend"></div>
+<div id="graph" phx-update="ignore" phx-hook="chart" data-values="<%= Jason.encode!(@values) %>"></div>
